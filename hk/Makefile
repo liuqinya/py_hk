@@ -1,7 +1,7 @@
 CC=gcc
 GMT_INC=-I${GMTHOME}/include
 GMT_LIBS=-L${GMTHOME}/lib -lgmt -lpsl -lnetcdf -lm -s
-CFLAGS= $(GMT_INC)
+CFLAGS= -DBYTE_SWAP $(GMT_INC)
 
 SUBS = sacio.o fft.o Complex.o
 
