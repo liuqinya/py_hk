@@ -25,5 +25,8 @@ These *.ri files have a, t8, user0, user1(?), user0=0.0418, 0.04929, 0.05789, 00
 
 3) ./grdmin -D example/hk.grd | ./hk_plt.pl > junk.ps
 you can open the junk.ps file with gv junk.ps
-
 hk_plt.pl has been updated to add 'gmtset MEASURE_UNIT inch' and change -JX4/2 to -JX8/4.
+
+Data preparation: waveform data downloaded and organized by events and rotated into the form of event_ID/sta.evid.[r,t,z]. The ray parameter p
+needs to be stored in SAC header USER0. IThe first P arrival be picked and stored in SAC header A; 
+The time window can be normally chosen to be [-10,80] around t_P with a sampling rate of 10 sample/sec.
