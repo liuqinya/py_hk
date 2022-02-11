@@ -2,6 +2,8 @@ This is the original HK1.3 package that are listed here for reference. The compl
 
 http://www.eas.slu.edu/People/LZhu/home.html  
 
+Clearly the copy rights goes to Prof. Zhu, and I will be happy to take it off if needed.
+
 1. Compile:
 Follow instructions in README file and set GMT include/library directories first; Fix the bug related to BOOLEAN (into GMT_LONG), and the warning on fprintf by adding %d into the 'format'.
 Add -DBYTE_SWAP to allow byte swapping after reading the sac binary files
